@@ -80,14 +80,13 @@ app.get('/help/*', (req, res) => {
 	});
 });
 
-app.get('/*', (req, res) => {
+app.get('*', (req, res) => {
 	res.render('404', {
 		title: 'From 404.hbs',
 		name: 'David Mayes',
 		errorMsg: '404 page not found',
 	});
 });
-
 
 app.listen(port, () => {
 	console.log(`Server is running on port ${port}`);
