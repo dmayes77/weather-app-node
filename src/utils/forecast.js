@@ -1,5 +1,5 @@
 const request = require('request');
-const secretKey = '5eae0c461eeaa013f942b963e7c25b32';
+const secretKey = process.env.DARKSKY_KEY;
 
 const forecast = (lat, long, callback) => {
 	const url = `https://api.darksky.net/forecast/${secretKey}/${lat},${long}`;
