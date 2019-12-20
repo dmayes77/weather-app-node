@@ -14,8 +14,8 @@ const forecast = (lat, long, callback) => {
 			const { data } = body.daily;
 			const { temperatureLow: tempLo, temperatureHigh: tempHi, summary } = data[0];
 			callback(
+            `Today's high is ${tempHi} degrees with a low of ${tempLo} degress. ${summary} It is currently ${temp} degrees. There is a ${precip}% chance of rain. `,
 				undefined,
-				`${summary} It is currently ${temp} degrees. There is a ${precip}% chance of rain. Today has an high of ${tempHi} with a low of ${tempLo}`,
 			);
 		}
 	});
