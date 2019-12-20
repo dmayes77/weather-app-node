@@ -1,5 +1,5 @@
 .portrait {
-	width: 650px;
+	width: 400px;
 }
 
 body {
@@ -43,7 +43,7 @@ header a {
 }
 
 input {
-  border: ipx solid #cccccc;
+	border: ipx solid #cccccc;
 	padding: 5px;
 }
 
